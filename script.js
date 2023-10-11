@@ -32,7 +32,7 @@ userPromise.then(
         function(language){ let emailData=prompt(`Enter email`);
             while(emailData===null||emailData===``) {emailData=prompt( `Enter email` )}
             console.log(`second reject`);
-          return Promise.reject(`${language}${emailData}`);
+          return Promise.reject(`${emailData}in${language}`);
         }
     )
     .then(
